@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: health
+  endpoint:
+    health:
+      probes:
+        enabled: false
+      show-details: always
+      status:
+        http-mapping:
+          DOWN: 503
+          OUT_OF_SERVICE: 503
+          UNKNOWN: 200
+          UP: 200
