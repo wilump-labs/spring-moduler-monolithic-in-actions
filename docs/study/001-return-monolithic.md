@@ -1,5 +1,4 @@
 # 001. 모놀리식으로 돌아가기
-
 ## 1. Background
 기술적 이점, 유행 등의 이유로 마이크로서비스로 개발을 진행했다.
 
@@ -15,6 +14,8 @@
 - **다시 언제든 찢어질 수 있어야 한다**
 - 그러기 위해서는 느슨한 결합, 강한 응집성을 준수해야 한다
 
+<br/>
+
 ## 2. Comparison
 일단 모놀리식과 마이크로서비스의 특징을 알고 넘어가자
 
@@ -29,6 +30,8 @@
 - 서비스를 독립적으로 배포 및 확장 가능
 - 서비스의 장애가 시스템 전체 장애로 확장되지 않음
 - 문제 해결에 특화된 다양한 기술을 도입 가능
+
+<br/>
 
 ## 3. Prerequisites
 모놀리식으로 가더라도 모듈 간 격리(공통 관심사 분리, 모듈 간 의존성 관리)는 중요
@@ -54,6 +57,8 @@
    - 2번 방법과 달리 논리적으로 모듈을 제어
    - 모듈(패키지) 간 의존성 제어, 모니터링 및 문서화 관련 편의 기능 제공
 
+<br/>
+
 ## 4. TODO
 1. Spring Modulith PoC
 2. 모듈간 장애 격리 및 모니터링 방법 PoC 필요
@@ -64,8 +69,14 @@
 
 ## Reference
 - [우아한테크세미나: 200123 우아한모노리스 by 박용권님](https://www.youtube.com/watch?v=SrQeIz3gXZg)
+  - [예제코드](https://github.com/arawn/building-modular-monoliths-using-spring) 
+  - [발표자료: 우아한모노리스](https://www.slideshare.net/slideshow/ss-224478403/224478403)
+  - [발표자료: 잘 키운 모노리스 하나 열 마이크로서비스 안 부럽다](https://www.slideshare.net/slideshow/ss-195979955/195979955)
 - [Modular Monolithic Architecture와 Spring Modulith](https://monday9pm.com/modular-architecture%EC%99%80-spring-modulith-43b6709b2937)
 - [Spring Modulith](https://docs.spring.io/spring-modulith/reference/index.html)
-  - [baeldung: spring-modulith](https://www.baeldung.com/spring-modulith)
-  - [spring-modulith monitoring](https://docs.spring.io/spring-modulith/reference/production-ready.html)
+  - [baeldung: Spring Modulith](https://www.baeldung.com/spring-modulith)
+  - [Spring Modulith Monitoring](https://docs.spring.io/spring-modulith/reference/production-ready.html)
+  - [Youtube: Spring Modulith Deep Dive](https://www.youtube.com/watch?v=430YOyMNjhs)
 - [spring-modulith overview(KR)](https://velog.io/@gehwan96/Spring-Modulith)
+- [멀티 모듈 설계 관점](https://mangkyu.tistory.com/304)
+  - [PPT](https://docs.google.com/presentation/d/1TSs-w9WW7Bz0qtu9byVR7UnHYNAYYWYt/edit#slide=id.p1)
