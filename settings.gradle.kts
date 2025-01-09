@@ -2,9 +2,11 @@ rootProject.name = "moduler"
 
 include(
     "applications",
-    "modules",
+    "modules:orders",
+    "modules:products",
     "libraries:support:logging",
     "libraries:support:monitoring",
+    "modulith",
 )
 
 pluginManagement {

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: modulith
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/testdb1
+    username: root
+    password: 12345678
+  jpa:
+    hibernate:
+      ddl-auto: create
+  modulith:
+    events:
+      jdbc:
+        schema-initialization:
+          enabled: true
+      republish-outstanding-events-on-restart: true
